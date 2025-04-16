@@ -1,0 +1,94 @@
+.upload-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    border: 2px dashed #ccc;
+    border-radius: 12px;
+    background-color: #f9f9f9;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .upload-container h2 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .upload-container p {
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .file-input {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .preview-container {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .preview-image {
+    max-width: 100%;
+    max-height: 250px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .upload-button,
+  .cancel-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .upload-button {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .upload-button.disabled {
+    background-color: #a1d6ae;
+    cursor: not-allowed;
+  }
+  
+  .cancel-button {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .upload-button:hover:not(.disabled),
+  .cancel-button:hover {
+    opacity: 0.9;
+  }
+  
+  .status-message {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  .status-message.success {
+    color: #28a745;
+  }
+  
+  .status-message.error {
+    color: #dc3545;
+  }
+  
