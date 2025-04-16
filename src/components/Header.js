@@ -11,6 +11,7 @@ const Header = ({ onNavigate }) => {
           <li><a href="#" onClick={() => onNavigate('services')}>Our Service</a></li>
           <li><a href="#" onClick={() => onNavigate('upload')}>Upload</a></li>
           <li><a href="#" onClick={() => onNavigate('analysis')}>Waste Analysis</a></li>
+          <li><a href="#" onClick={() => onNavigate('profile')}>Sign In</a></li>
         </ul>
       </nav>
     </header>

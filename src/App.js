@@ -18,6 +18,7 @@ function App() {
       {currentPage === 'upload' && <ImageUpload />}
       {currentPage === 'services' && <div>Our Services Page</div>}
       {currentPage === 'analysis' && <div>Waste Analysis Page</div>}
+      {currentPage === 'profile' && <div>profile Page</div>}
     </div>
   );
 }
