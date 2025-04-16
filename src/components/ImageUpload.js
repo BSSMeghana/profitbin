@@ -14,6 +14,7 @@ const ImageUpload = () => {
   const handleFileChange = (e) => {
     const file = e.target.files[0];
 
+    // Reset state if no file selected
     if (!file) {
       resetStates();
       return;
@@ -23,7 +24,7 @@ const ImageUpload = () => {
     if (!allowedTypes.includes(file.type)) {
       setUploadStatus('Error: Only JPG, JPEG, and PNG files are allowed');
       resetStates();
-      fileInputRef.current.value = '';
+      fileInputRef.current.value = ''; // Clear the file input
       return;
     }
 
@@ -35,9 +36,11 @@ const ImageUpload = () => {
       return;
     }
 
+    // Set the valid file
     setSelectedFile(file);
     setUploadStatus('');
 
+    // Create preview
     const reader = new FileReader();
     reader.onloadend = () => {
       setPreviewUrl(reader.result);
@@ -56,6 +59,7 @@ const ImageUpload = () => {
       return;
     }
 
+    // Simulate upload success
     setUploadStatus('Upload simulated successfully!');
     console.log('File ready for client-side processing:', selectedFile);
   };
