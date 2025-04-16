@@ -1,0 +1,77 @@
+/* General container for the services page */
+.services-container {
+    padding: 3rem 2rem;
+    background: #f5fbf4; /* Light eco-friendly green background */
+    font-family: 'Segoe UI', sans-serif;
+    color: #2d3e2f;
+    text-align: center;
+  }
+  
+  /* Header for the services page */
+  .services-container h2 {
+    font-size: 2.5rem;
+    color: #2c5f2d;
+    margin-bottom: 1rem;
+  }
+  
+  /* Tagline under the header */
+  .tagline {
+    font-size: 1.2rem;
+    color: #4b5e4d;
+    margin-bottom: 2rem;
+    font-style: italic;
+  }
+  
+  /* Wrapper around the image */
+  .image-wrapper {
+    margin-bottom: 2rem;
+  }
+  
+  /* Styles for the service image */
+  .services-image {
+    width: 100%;
+    max-height: 820px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+  }
+  
+  /* Styling for service sections (if added later) */
+  .services-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  
+  /* Individual service cards */
+  .service-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(45, 62, 47, 0.1);
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: scale(1.03);
+  }
+  
+  .service-card h3 {
+    font-size: 1.6rem;
+    color: #2d3e2f;
+    margin-bottom: 1rem;
+  }
+  
+  .service-card p {
+    font-size: 1rem;
+    color: #4b5e4d;
+  }
+  
+  .service-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
