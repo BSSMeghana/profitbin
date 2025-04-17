@@ -1,77 +1,160 @@
-/* General container for the services page */
+/* Container styling */
 .services-container {
-    padding: 3rem 2rem;
-    background: #f5fbf4; /* Light eco-friendly green background */
-    font-family: 'Segoe UI', sans-serif;
-    color: #2d3e2f;
-    text-align: center;
-  }
-  
-  /* Header for the services page */
-  .services-container h2 {
-    font-size: 2.5rem;
-    color: #2c5f2d;
-    margin-bottom: 1rem;
-  }
-  
-  /* Tagline under the header */
-  .tagline {
-    font-size: 1.2rem;
-    color: #4b5e4d;
-    margin-bottom: 2rem;
-    font-style: italic;
-  }
-  
-  /* Wrapper around the image */
-  .image-wrapper {
-    margin-bottom: 2rem;
-  }
-  
-  /* Styles for the service image */
-  .services-image {
-    width: 100%;
-    max-height: 820px;
-    object-fit: cover;
-    border-radius: 12px;
-    margin-bottom: 2rem;
-  }
-  
-  /* Styling for service sections (if added later) */
-  .services-section {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 3rem;
-  }
-  
-  /* Individual service cards */
-  .service-card {
-    background-color: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(45, 62, 47, 0.1);
-    padding: 1.5rem;
-    text-align: center;
-    transition: transform 0.3s ease;
-  }
-  
-  .service-card:hover {
-    transform: scale(1.03);
-  }
-  
-  .service-card h3 {
-    font-size: 1.6rem;
-    color: #2d3e2f;
-    margin-bottom: 1rem;
-  }
-  
-  .service-card p {
-    font-size: 1rem;
-    color: #4b5e4d;
-  }
-  
-  .service-card img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-  
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Hero Image */
+.services-image {
+  width: 100%;
+  height: 500px;
+  margin: 0 auto 30px auto;
+  border-radius: 12px;
+  display: block;
+}
+
+/* Heading */
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2e7d32; /* dark green */
+  margin-bottom: 50px;
+}
+
+/* Section 1 */
+.services-section {
+  background-color: #f0fdf4; /* very light green background */
+  padding: 40px 20px;
+  border-radius: 16px;
+  margin-top: 20px;
+}
+
+
+.what-we-do-section {
+  padding: 20px;
+  background-color: #f5f5f5;
+  margin: 30px 0;
+  border-radius: 10px;
+}
+
+.what-we-do-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #2e7d32;
+}
+
+.what-we-do-description {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.get-connected-section {
+  padding: 20px;
+  background-color: #e8f5e9;
+  margin: 30px 0;
+  border-radius: 10px;
+}
+
+.get-connected-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #2e7d32;
+}
+
+.get-connected-description {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+
+/* Main Title */
+.main-title {
+  font-size: 2rem;
+  color: #388e3c; /* medium green */
+  margin-bottom: 20px;
+}
+
+/* Sub Title */
+.sub-title {
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Points container */
+.points-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+/* Individual point */
+.point {
+  background: #ffffff;
+  border: 1px solid #d1e7dd;
+  padding: 20px;
+  border-radius: 12px;
+  width: 100%;
+  text-align: left;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.point:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Point titles */
+.point h5 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+/* Point paragraph */
+.point p {
+  font-size: 1rem;
+  color: #666;
+}
+
+
+/* Customers Section */
+.customers-section {
+  background-color: #e8f5e9; /* Light green background */
+  padding: 40px 20px;
+  border-radius: 16px;
+  margin: 40px 0;
+  text-align: center;
+}
+
+.customers-title {
+  font-size: 2rem;
+  color: #2e7d32;
+  margin-bottom: 20px;
+}
+
+.customers-description {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.customers-list {
+  list-style: none;
+  padding: 0;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.customers-list li {
+  margin-bottom: 15px;
+}
